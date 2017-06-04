@@ -130,7 +130,7 @@ def handle_append(key, value):
         return return_value
     elif not isinstance(list_value, list):
         return (False, 'ERROR: Key [{}] contains non-list value ([{}])'.format(
-            key, value))
+            key, list_value))
     else:
         DATA[key].append(value)
         return (True, 'Key [{}] had value [{}] appended'.format(key, value))
